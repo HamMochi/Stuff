@@ -1,0 +1,16 @@
+from Tkinter import * 
+import RPi.GPIO as GPIO
+import time
+
+class KartGUI:
+  def __init__(self, master): #test
+    self.power_source = "None"
+    self.startCar = False
+    self.in_reverse = False
+    self.in_forward = False
+    self.in_neutral = False
+    root.minsize(width=400, height=400)
+    root.massize(width=600, height=600)
+    frame = Frame(master)
+    frame.pack()
+    self.text = Text(stateNORMAL, font=('Courier', 16), fg = "black"
